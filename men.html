@@ -25,6 +25,7 @@
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="../../../sibforms.com/forms/end-form/build/sib-styles.css">
    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+   <link rel="stylesheet" type="text/css" href="css/add.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png">
@@ -202,7 +203,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="item-link">Kids</a>
+                                    <a href="#" class="item-link">kids</a>
                                     <div class="sub-menu mega-menu">
                                         <div class="container">
                                             <div class="row">
@@ -548,14 +549,10 @@
                                         <div class="widget-facet facet-categories">
                                             <h6 class="facet-title">Categories</h6>
                                             <ul class="facet-content">
-                                                <!-- <li><a href="#" class="categories-item">Bags <span class="count-cate">(112)</span></a></li> -->
-                                                <!-- <li><a href="#" class="categories-item">Booking <span class="count-cate">(32)</span> </a></li> -->
-                                                <!-- <li><a href="#" class="categories-item">Clothing <span class="count-cate">(42)</span></a></li> -->
-                                                <li><a href="#" class="categories-item active">Men <span class="count-cate">(100)</span></a></li>
-                                                <!-- <li><a href="#" class="categories-item">Men <span class="count-cate">(13)</span></a></li> -->
-                                                <li><a href="#" class="categories-item">Women <span class="count-cate">(13)</span></a></li>
-                                                <li><a href="#" class="categories-item">Kids <span class="count-cate">(52)</span></a></li>
-                                                <!-- <li><a href="#" class="categories-item">Uncategorized <span class="count-cate">(14)</span></a></li> -->
+                                                <li><a href="#" class="categories-item active" data-filter="all">All</a></li>
+                                                <li><a href="#" class="categories-item" data-filter="men">Men <span class="count-cate">(100)</span></a></li>
+                                                <li><a href="#" class="categories-item " data-filter="women">Women <span class="count-cate">(13)</span></a></li>
+                                                <li><a href="#" class="categories-item " data-filter="kids">kids <span class="count-cate">(52)</span></a></li>
                                             </ul>
                                         </div>
                                         <div class="widget-facet facet-price">
@@ -1094,7 +1091,7 @@
                             </div>
                             <div class="tf-grid-layout wrapper-shop tf-col-3" id="gridLayout">
                                 <!-- card product 1 -->
-                                <div class="card-product grid" data-availability="Out of stock" data-brand="adidas">
+                                <div class="card-product item clothes-filter grid women" data-availability="Out of stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="image-product">
@@ -1119,12 +1116,12 @@
                                         </div> 
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="title link">V-neck cotton T-shirt</a>
+                                        <a href="product-detail.html" class="title link">Ladies V-neck cotton T-shirt</a>
                                         <span class="price current-price"><i class="bi bi-currency-rupee"></i>3199</span>
                                     </div>
                                 </div>
                                 <!-- card product 2 -->
-                                <div class="card-product grid" data-availability="In stock" data-brand="nike">
+                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
@@ -1237,7 +1234,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 3 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
@@ -1293,7 +1290,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 4 -->
-                                <div class="card-product grid" data-availability="Out of stock" data-brand="gucci">
+                                <div class="card-product item item clothes-filter grid women" data-availability="Out of stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
@@ -1340,7 +1337,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 5 -->
-                                <div class="card-product grid card-product-size" data-availability="Out of stock" data-brand="hermes">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="Out of stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-8.jpg" src="womens/women-8.jpg" alt="image-product">
@@ -1378,7 +1375,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 6 -->
-                                <div class="card-product grid" data-availability="In stock" data-brand="zalando">
+                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-171.jpg" src="womens/women-171.jpg" alt="image-product">
@@ -1421,7 +1418,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 7 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="nike">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-83.jpg" src="womens/women-83.jpg" alt="image-product">
@@ -1477,7 +1474,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 8 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-102.jpg" src="womens/women-102.jpg" alt="image-product">
@@ -1533,7 +1530,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 9 -->
-                                <div class="card-product grid" data-availability="In stock" data-brand="hermes">
+                                <div class="card-product item clothes-filter grid men" data-availability="In stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-11.jpg" src="mens/men-11.jpg" alt="image-product">
@@ -1563,7 +1560,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 10 -->
-                                <div class="card-product grid"  data-availability="In stock" data-brand="gucci">
+                                <div class="card-product item clothes-filter grid men"  data-availability="In stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-13.jpg" src="mens/men-13.jpg" alt="image-product">
@@ -1659,7 +1656,7 @@
                                         </div> 
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="title link">Polarized sunglasses</a>
+                                        <a href="product-detail.html" class="title link">Shirt</a>
                                         <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>5000</span> <span class="current-price"><i class="bi bi-currency-rupee"></i>2199</span></div>
                                         <ul class="list-color-product">
                                             <li class="list-color-item color-swatch active">
@@ -1676,7 +1673,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 11 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="zalando">
+                                <div class="card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-7.jpg" src="mens/men-7.jpg" alt="image-product">
@@ -1733,7 +1730,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 12 -->
-                                <div class="card-product grid" data-availability="In stock" data-brand="adidas">
+                                <div class="card-product item clothes-filter grid men" data-availability="In stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-1.jpg" src="mens/men-1.jpg" alt="image-product">
@@ -1780,7 +1777,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 13 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="nike">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-37.jpg" src="womens/women-37.jpg" alt="image-product">
@@ -1831,7 +1828,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 14 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
+                                <div class="card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-15.jpg" src="mens/men-15.jpg" alt="image-product">
@@ -1888,7 +1885,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 15 -->
-                                <div class="card-product grid" data-availability="In stock" data-brand="gucci">
+                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-167.jpg" src="womens/women-167.jpg" alt="image-product">
@@ -1931,7 +1928,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 16 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="adidas">
+                                <div class="card-product item clothes-filter grid card-product-size men" data-availability="In stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-19.jpg" src="mens/men-19.jpg" alt="image-product">
@@ -1972,7 +1969,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 17 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="hermes">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-73.jpg" src="womens/women-73.jpg" alt="image-product">
@@ -2028,7 +2025,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 18 -->
-                                <div class="card-product grid card-product-size" data-availability="In stock" data-brand="zalando">
+                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-132.jpg" src="womens/women-132.jpg" alt="image-product">
@@ -2083,6 +2080,8 @@
                                         </ul>
                                     </div>
                                 </div>
+                                
+                               
                                 <!-- pagination -->
                                 <ul class="wg-pagination justify-content-center">
                                     <li><a href="#" class="pagination-item text-button">1</a></li>
@@ -4586,6 +4585,7 @@
     <script type="text/javascript" src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/shop.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tap-filter.js"></script>
 
     <script defer src="../../../sibforms.com/forms/end-form/build/main.js"></script>
     <script>
