@@ -22,7 +22,7 @@ filterButtons.forEach(button => {
 // Function to filter items by category
 function filterItems(filter) {
   items.forEach(item => {
-    if (filter === 'all' || item.classList.contains(filter)) {
+    if ( item.classList.contains(filter)) {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
