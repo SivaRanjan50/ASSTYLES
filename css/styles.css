@@ -16713,6 +16713,7 @@ button .icon {
   border-right: 0;
   border-left: 1px solid var(--line);
 }
+
 @keyframes slide-har-reverse {
   0% {
     -webkit-transform: translateX(0%);
@@ -16792,6 +16793,14 @@ button .icon {
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+/* -------------additional process------------------------ */
+
+@media(min-width:1199px){
+  .filterShop{
+    display:none;
   }
 }
 
