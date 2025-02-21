@@ -32,3 +32,30 @@ function filterItems(filter) {
 
 // Initialize by showing Men's items by default
 filterItems('all');
+
+
+// -----------------------------filter price----------------------------
+
+document.addEventListener('DOMContentLoaded', function () {
+  const priceOptions = document.querySelectorAll('.price-filter-options input');
+  const itemsPrice = document.querySelectorAll('.priceItem');
+
+  priceOptions.forEach(option => {
+      option.addEventListener('change', () => {
+          // Get the selected price range
+          const selectedRanges = Array.from(priceOptions)
+              .filter(opt => opt.checked)
+              .map(opt => ({
+                  min: parseFloat(opt.getAttribute('data-min')),
+                  max: parseFloat(opt.getAttribute('data-max'))
+              }));
+
+          // Filter itemsPrice based on the selected price range
+          itemsPrice.forEach(item => {
+              const itemPrice = parseFloat(item.getAttribute('data-price'));
+              const isVisible = selectedRanges.some(range => itemPrice >= range.min && itemPrice <= range.max);
+              item.style.display = isVisible ? 'block' : 'none';
+          });
+      });
+  });
+});

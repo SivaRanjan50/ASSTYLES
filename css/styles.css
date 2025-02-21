@@ -10935,11 +10935,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 20px;
 }
 .widget-facet:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-bottom: 1px solid var(--line);
 }
 .widget-facet .facet-title {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .widget-facet.facet-categories li:not(:last-child) {
   margin-bottom: 12px;
@@ -10982,7 +10982,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .widget-facet .facet-size-box {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 12px;
+  column-gap: 2px;
   row-gap: 16px;
   padding-right: 20px;
 }
@@ -11002,8 +11002,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   cursor: pointer;
 }
 .widget-facet .facet-size-box .size-item:not(.free-size) {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
+  font-size:15px;
   display: flex;
   align-items: center;
   justify-content: center;
