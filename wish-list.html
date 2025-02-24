@@ -8,10 +8,10 @@
 <!--<![endif]-->
 
 
-<!-- Mirrored from themesflat.co/html/modave/shopping-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:28:24 GMT -->
+<!-- Mirrored from themesflat.co/html/modave/wish-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:28:24 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>AS Styles</title>
+    <title>AS Style</title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,11 +27,9 @@
    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
     <!-- Favicon and Touch Icons  -->
-    <!-- <link rel="shortcut icon" href="logo/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="logo/favicon.png"> -->
+    <!-- <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- -----------------------Google fonts-------------------------- -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_bag" /> -->
 
 </head>
 
@@ -61,7 +59,7 @@
             <div class="spinner"></div>
         </div>
     </div>
-    <!-- /preload -->
+    <!-- /preload --> 
 
     <div id="wrapper">
         <!-- Top Bar-->
@@ -77,8 +75,8 @@
                         <div class="tf-cur justify-content-end">
                             <div class="tf-currencies">
                                 <select class="image-select center style-default type-currencies color-white">
-                                    <option selected data-thumbnail="country/us.svg">USD</option>
-                                    <option data-thumbnail="country/vn.svg">VND</option>
+                                    <option selected data-thumbnail="images/country/us.svg">USD</option>
+                                    <option data-thumbnail="images/country/vn.svg">VND</option>
                                 </select>
                             </div>
                             <div class="tf-languages">
@@ -376,11 +374,16 @@
                                     </svg>  
                                 </a>
                             </li>
-                            <li class="nav-cart"><a href="#shoppingCart" data-bs-toggle="modal" class="nav-icon-item">
-                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16.5078 10.8734V6.36686C16.5078 5.17166 16.033 4.02541 15.1879 3.18028C14.3428 2.33514 13.1965 1.86035 12.0013 1.86035C10.8061 1.86035 9.65985 2.33514 8.81472 3.18028C7.96958 4.02541 7.49479 5.17166 7.49479 6.36686V10.8734M4.11491 8.62012H19.8877L21.0143 22.1396H2.98828L4.11491 8.62012Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>  
-                                <span class="count-box">1</span></a>
+                            <li class="nav-cart">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="nav-icon-item">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.5078 10.8734V6.36686C16.5078 5.17166 16.033 4.02541 15.1879 3.18028C14.3428 2.33514 13.1965 1.86035 12.0013 1.86035C10.8061 1.86035 9.65985 2.33514 8.81472 3.18028C7.96958 4.02541 7.49479 5.17166 7.49479 6.36686V10.8734M4.11491 8.62012H19.8877L21.0143 22.1396H2.98828L4.11491 8.62012Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                                    <!-- <span class="material-symbols-outlined">
+                                        shopping_bag
+                                        </span> -->
+                                    <span class="count-box">1</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -390,563 +393,721 @@
         <!-- /Header -->
         
         <!-- page-title -->
-        <div class="page-title" style="background-image: url(section/page-title.jpg);">
+        <div class="page-title" style="background-image: url(banners/banner01.jpg);">
             <div class="container">
-                <h3 class="heading text-center">Shopping Cart</h3>
+                <h3 class="heading text-center">Your Wishlist</h3>
                 <ul class="breadcrumbs d-flex align-items-center justify-content-center">
                     <li><a class="link" href="index.html">Homepage</a></li>
                     <li><i class="icon-arrRight"></i></li>
                     <li><a class="link" href="shop-default-grid.html">Shop</a></li>
                     <li><i class="icon-arrRight"></i></li>
-                    <li>Shopping Cart</li>
+                    <li>Wishlist</li>
                 </ul>
             </div>
         </div>
         <!-- /page-title -->
-        <!-- Section cart -->
+        <!-- Section product -->
         <section class="flat-spacing">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-8">
-                        <div class="tf-cart-sold">
-                            <div class="notification-sold bg-surface">
-                                <img class="icon" src="logo/icon-fire.png" alt="img">
-                                <div class="count-text">Your cart will expire in <div class="js-countdown time-count" data-timer="600" data-labels=":,:,:,"></div> minutes! Please checkout now before your items sell out!</div>  
+                <div class="tf-grid-layout tf-col-2 md-col-3 xl-col-4">
+                    <!-- card product 1 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0s" data-availability="Out of stock" data-brand="adidas">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-20.jpg" src="womens/women-20.jpg" alt="image-product">
+                            </a>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
                             </div>
-                            <div class="notification-progress">
-                                <div class="text">Buy <span class="fw-semibold text-primary"><i class="bi bi-currency-rupee"></i>70.00</span> more to get <span class="fw-semibold">Freeship</span></div>
-                                <div class="progress-cart">
-                                    <div class="value" style="width: 0%;" data-progress="50">
-                                        <span class="round"></span>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
                         </div>
-                        <form>
-                            <table class="tf-table-page-cart">
-                                <thead>
-                                    <tr>
-                                        <th>Products</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total Price</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tf-cart-item file-delete">
-                                        <td class="tf-cart-item_product">
-                                            <a href="product-detail.html" class="img-box">
-                                                <img src="womens/women-19.jpg" alt="product">
-                                            </a>
-                                            <div class="cart-info">
-                                                <a href="product-detail.html" class="cart-title link">V-neck cotton T-shirt</a>
-                                                <div class="variant-box">
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">Blue</option>
-                                                            <option>Black</option>
-                                                            <option>White</option>
-                                                            <option>Red</option>
-                                                            <option>Beige</option>
-                                                            <option>Pink</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">XL</option>
-                                                            <option>XS</option>
-                                                            <option>S</option>
-                                                            <option>M</option>
-                                                            <option>L</option>
-                                                            <option>XL</option>
-                                                            <option>2XL</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Price" class="tf-cart-item_price text-center">
-                                            <div class="cart-price text-button price-on-sale"><i class="bi bi-currency-rupee"></i>60.00</div>
-                                        </td>
-                                        <td data-cart-title="Quantity" class="tf-cart-item_quantity">
-                                            <div class="wg-quantity mx-md-auto">
-                                                <span class="btn-quantity btn-decrease">-</span>
-                                                <input type="text" class="quantity-product" name="number" value="1">
-                                                <span class="btn-quantity btn-increase">+</span>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Total" class="tf-cart-item_total text-center">
-                                            <div class="cart-total text-button total-price"><i class="bi bi-currency-rupee"></i>60.00</div>
-                                        </td>
-                                        <td data-cart-title="Remove" class="remove-cart"><span class="remove icon icon-close"></span></td>
-                                    </tr>
-                                    <tr class="tf-cart-item file-delete">
-                                        <td class="tf-cart-item_product">
-                                            <a href="product-detail.html" class="img-box">
-                                                <img src="womens/women-1.jpg" alt="product">
-                                            </a>
-                                            <div class="cart-info">
-                                                <a href="product-detail.html" class="cart-title link">V-neck cotton T-shirt</a>
-                                                <div class="variant-box">
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">Blue</option>
-                                                            <option>Black</option>
-                                                            <option>White</option>
-                                                            <option>Red</option>
-                                                            <option>Beige</option>
-                                                            <option>Pink</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">XL</option>
-                                                            <option>XS</option>
-                                                            <option>S</option>
-                                                            <option>M</option>
-                                                            <option>L</option>
-                                                            <option>XL</option>
-                                                            <option>2XL</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Price" class="tf-cart-item_price text-center">
-                                            <div class="cart-price text-button price-on-sale"><i class="bi bi-currency-rupee"></i>40.00</div>
-                                        </td>
-                                        <td data-cart-title="Quantity" class="tf-cart-item_quantity">
-                                            <div class="wg-quantity mx-md-auto">
-                                                <span class="btn-quantity btn-decrease">-</span>
-                                                <input type="text" class="quantity-product" name="number" value="1">
-                                                <span class="btn-quantity btn-increase">+</span>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Total" class="tf-cart-item_total text-center">
-                                            <div class="cart-total text-button total-price"><i class="bi bi-currency-rupee"></i>40.00</div>
-                                        </td>
-                                        <td data-cart-title="Remove" class="remove-cart"><span class="remove icon icon-close"></span></td>
-                                    </tr>
-                                    <tr class="tf-cart-item file-delete">
-                                        <td class="tf-cart-item_product">
-                                            <a href="product-detail.html" class="img-box">
-                                                <img src="womens/women-29.jpg" alt="product">
-                                            </a>
-                                            <div class="cart-info">
-                                                <a href="product-detail.html" class="cart-title link">V-neck cotton T-shirt</a>
-                                                <div class="variant-box">
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">Blue</option>
-                                                            <option>Black</option>
-                                                            <option>White</option>
-                                                            <option>Red</option>
-                                                            <option>Beige</option>
-                                                            <option>Pink</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="tf-select">
-                                                        <select>
-                                                            <option selected="selected">XL</option>
-                                                            <option>XS</option>
-                                                            <option>S</option>
-                                                            <option>M</option>
-                                                            <option>L</option>
-                                                            <option>XL</option>
-                                                            <option>2XL</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Price" class="tf-cart-item_price text-center">
-                                            <div class="cart-price"><span class="old-price"><i class="bi bi-currency-rupee"></i>80.00</span><span class="text-button new-price price-on-sale"><i class="bi bi-currency-rupee"></i>129.00</span></div>
-                                        </td>
-                                        <td data-cart-title="Quantity" class="tf-cart-item_quantity">
-                                            <div class="wg-quantity mx-md-auto">
-                                                <span class="btn-quantity btn-decrease">-</span>
-                                                <input type="text" class="quantity-product" name="number" value="1">
-                                                <span class="btn-quantity btn-increase">+</span>
-                                            </div>
-                                        </td>
-                                        <td data-cart-title="Total" class="tf-cart-item_total text-center">
-                                            <div class="cart-total text-button total-price"><i class="bi bi-currency-rupee"></i>129.00</div>
-                                        </td>
-                                        <td data-cart-title="Remove" class="remove-cart"><span class="remove icon icon-close"></span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="ip-discount-code">
-                                <input type="text" placeholder="Add voucher discount">
-                                <button class="tf-btn"><span class="text">Apply Code</span></button>
-                            </div>
-                            <div class="group-discount">
-                                <div class="box-discount">
-                                    <div class="discount-top">
-                                        <div class="discount-off">
-                                            <div class="text-caption-1">Discount</div>
-                                            <span class="sale-off text-btn-uppercase">10% OFF</span>
-                                        </div>
-                                        <div class="discount-from">
-                                            <p class="text-caption-1">For all orders <br> from 200<i class="bi bi-currency-rupee"></i></p>
-                                        </div>
-                                    </div>
-                                    <div class="discount-bot">
-                                        <span class="text-btn-uppercase">Mo234231</span>
-                                        <button class="tf-btn"><span class="text">Apply Code</span></button>
-                                    </div>
-                                </div>
-                                <div class="box-discount active">
-                                    <div class="discount-top">
-                                        <div class="discount-off">
-                                            <div class="text-caption-1">Discount</div>
-                                            <span class="sale-off text-btn-uppercase">10% OFF</span>
-                                        </div>
-                                        <div class="discount-from">
-                                            <p class="text-caption-1">For all orders <br> from 200<i class="bi bi-currency-rupee"></i></p>
-                                        </div>
-                                    </div>
-                                    <div class="discount-bot">
-                                        <span class="text-btn-uppercase">Mo234231</span>
-                                        <button class="tf-btn"><span class="text">Apply Code</span></button>
-                                    </div>
-                                </div>
-                                <div class="box-discount">
-                                    <div class="discount-top">
-                                        <div class="discount-off">
-                                            <div class="text-caption-1">Discount</div>
-                                            <span class="sale-off text-btn-uppercase">10% OFF</span>
-                                        </div>
-                                        <div class="discount-from">
-                                            <p class="text-caption-1">For all orders <br> from 200<i class="bi bi-currency-rupee"></i></p>
-                                        </div>
-                                    </div>
-                                    <div class="discount-bot">
-                                        <span class="text-btn-uppercase">Mo234231</span>
-                                        <button class="tf-btn"><span class="text">Apply Code</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="fl-sidebar-cart">
-                            <div class="box-order bg-surface">
-                                <h5 class="title">Order Summary</h5>
-                                <div class="subtotal text-button d-flex justify-content-between align-items-center">
-                                    <span>Subtotal</span>
-                                    <span class="total">-<i class="bi bi-currency-rupee"></i>80.00</span>
-                                </div>
-                                <div class="discount text-button d-flex justify-content-between align-items-center">
-                                    <span>Discounts</span>
-                                    <span class="total">-<i class="bi bi-currency-rupee"></i>80.00</span>
-                                </div>
-                                <div class="ship">
-                                    <span class="text-button">Shipping</span>
-                                    <div class="flex-grow-1">
-                                        <fieldset class="ship-item">
-                                            <input type="radio" name="ship-check" class="tf-check-rounded" id="free" checked>
-                                            <label for="free">
-                                                <span>Free Shipping</span>
-                                                <span class="price"><i class="bi bi-currency-rupee"></i>0.00</span>
-                                            </label>
-                                        </fieldset>
-                                        <fieldset class="ship-item">
-                                            <input type="radio" name="ship-check" class="tf-check-rounded" id="local">
-                                            <label for="local">
-                                                <span>Local:</span>
-                                                <span class="price"><i class="bi bi-currency-rupee"></i>35.00</span>
-                                            </label>
-                                        </fieldset>
-                                        <fieldset class="ship-item">
-                                            <input type="radio" name="ship-check" class="tf-check-rounded" id="rate">
-                                            <label for="rate">
-                                                <span>Flat Rate:</span>
-                                                <span class="price"><i class="bi bi-currency-rupee"></i>35.00</span>
-                                            </label>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                                <h5 class="total-order d-flex justify-content-between align-items-center">
-                                    <span>Total</span>
-                                    <span class="total"><i class="bi bi-currency-rupee"></i>186,99</span>
-                                </h5>
-                                <div class="box-progress-checkout">
-                                    <fieldset class="check-agree">
-                                        <input type="checkbox" id="check-agree" class="tf-check-rounded">
-                                        <label for="check-agree">
-                                            I agree with the <a href="term-of-use.html">terms and conditions</a>
-                                        </label>
-                                    </fieldset>
-                                    <a href="checkout.html" class="tf-btn btn-reset">Process To Checkout</a>
-                                    <p class="text-button text-center">Or continue shopping</p>
-                                </div>  
-                            </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">V-neck cotton T-shirt</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>59.99</span>
                         </div>
                     </div>
+                    <!-- card product 2 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0.1s" data-availability="In stock" data-brand="nike">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-179.jpg" src="womens/women-179.jpg" alt="image-product">
+                            </a>
+                            <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
+                            <div class="marquee-product bg-main">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Polarized sunglasses</a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <span class="current-price"><i class="bi bi-currency-rupee"></i>79.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active line">
+                                    <span class="d-none text-capitalize color-filter">Light Blue</span>
+                                    <span class="swatch-value bg-light-blue"></span>
+                                    <img class="lazyload" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Light Blue</span>
+                                    <span class="swatch-value bg-light-blue-2"></span>
+                                    <img class="lazyload" data-src="womens/women-177.jpg" src="womens/women-177.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 3 -->
+                    <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0.2s" data-availability="In stock" data-brand="LV">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-30.jpg" src="womens/women-30.jpg" alt="image-product">
+                            </a>
+                            <div class="variant-wrap size-list">
+                                <ul class="variant-box">
+                                    <li class="size-item">S</li>
+                                    <li class="size-item">M</li>
+                                    <li class="size-item">L</li>
+                                    <li class="size-item">XL</li>
+                                </ul>
+                            </div>
+                            <div class="variant-wrap countdown-wrap">
+                                <div class="variant-box">
+                                    <div class="js-countdown" data-timer="1007500" data-labels="D :,H :,M :,S"></div>
+                                </div>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Ramie shirt with pockets </a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <span class="current-price"><i class="bi bi-currency-rupee"></i>89.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active line">
+                                    <span class="d-none text-capitalize color-filter">Orange</span>
+                                    <span class="swatch-value bg-light-orange"></span>
+                                    <img class="lazyload" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-light-grey"></span>
+                                    <img class="lazyload" data-src="womens/women-33.jpg" src="womens/women-33.jpg" alt="image-product">
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 4 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0.3s" data-availability="Out of stock" data-brand="gucci">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-2.jpg" src="womens/women-2.jpg" alt="image-product">
+                            </a>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Ribbed cotton-blend top</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>69.99</span>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active line">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-dark-grey"></span>
+                                    <img class="lazyload" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Pink</span>
+                                    <span class="swatch-value bg-light-pink"></span>
+                                    <img class="lazyload" data-src="womens/women-2.jpg" src="womens/women-2.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-dark-grey-2"></span>
+                                    <img class="lazyload" data-src="womens/women-3.jpg" src="womens/women-3.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 5 -->
+                    <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0s" data-availability="Out of stock" data-brand="hermes">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-8.jpg" src="womens/women-8.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-9.jpg" src="womens/women-9.jpg" alt="image-product">
+                            </a>
+                            <div class="variant-wrap size-list">
+                                <ul class="variant-box">
+                                    <li class="size-item">S</li>
+                                    <li class="size-item">M</li>
+                                    <li class="size-item">L</li>
+                                    <li class="size-item">XL</li>
+                                </ul>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Ribbed cotton-blend top</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>39.99</span>
+                        </div>
+                    </div>
+                    <!-- card product 6 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0.1s" data-availability="In stock" data-brand="zalando">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-171.jpg" src="womens/women-171.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-172.jpg" src="womens/women-172.jpg" alt="image-product">
+                            </a>
+                            
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Faux-leather trousers</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>79.99</span>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active">
+                                    <span class="d-none text-capitalize color-filter">Orange</span>
+                                    <span class="swatch-value bg-orange"></span>
+                                    <img class="lazyload" data-src="womens/women-171.jpg" src="womens/women-171.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Pink</span>
+                                    <span class="swatch-value bg-dark-pink"></span>
+                                    <img class="lazyload" data-src="womens/women-172.jpg" src="womens/women-172.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 7 -->
+                    <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0.2s" data-availability="In stock" data-brand="nike">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-83.jpg" src="womens/women-83.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-84.jpg" src="womens/women-84.jpg" alt="image-product">
+                            </a>
+                            <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
+                            <div class="variant-wrap size-list">
+                                <ul class="variant-box">
+                                    <li class="size-item">S</li>
+                                    <li class="size-item">M</li>
+                                    <li class="size-item">L</li>
+                                    <li class="size-item">XL</li>
+                                </ul>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Belt wrap dress</a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span><span class="current-price"><i class="bi bi-currency-rupee"></i>129.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active">
+                                    <span class="d-none text-capitalize color-filter">Green</span>
+                                    <span class="swatch-value bg-light-green"></span>
+                                    <img class="lazyload" data-src="womens/women-83.jpg" src="womens/women-83.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-grey"></span>
+                                    <img class="lazyload" data-src="womens/women-94.jpg" src="womens/women-94.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch line">
+                                    <span class="d-none text-capitalize color-filter">White</span>
+                                    <span class="swatch-value bg-white"></span>
+                                    <img class="lazyload" data-src="womens/women-87.jpg" src="womens/women-87.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 8 -->
+                    <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0.3s" data-availability="In stock" data-brand="LV">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="womens/women-102.jpg" src="womens/women-102.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="womens/women-103.jpg" src="womens/women-103.jpg" alt="image-product">
+                            </a>
+                            <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
+                            <div class="variant-wrap size-list">
+                                <ul class="variant-box">
+                                    <li class="size-item">S</li>
+                                    <li class="size-item">M</li>
+                                    <li class="size-item">L</li>
+                                    <li class="size-item">XL</li>
+                                </ul>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Double-button trench coat</a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span><span class="current-price"><i class="bi bi-currency-rupee"></i>219.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-grey-2"></span>
+                                    <img class="lazyload" data-src="womens/women-102.jpg" src="womens/women-102.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Orange</span>
+                                    <span class="swatch-value bg-light-orange"></span>
+                                    <img class="lazyload" data-src="womens/women-111.jpg" src="womens/women-111.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch line">
+                                    <span class="d-none text-capitalize color-filter">White</span>
+                                    <span class="swatch-value bg-white"></span>
+                                    <img class="lazyload" data-src="womens/women-104.jpg" src="womens/women-104.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 9 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0s" data-availability="In stock" data-brand="hermes">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="mens/men-11.jpg" src="mens/men-11.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="mens/men-12.jpg" src="mens/men-12.jpg" alt="image-product">
+                            </a>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">V-neck cotton T-shirt</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>59.99</span>
+                        </div>
+                    </div>
+                    <!-- card product 10 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0.1s" data-availability="In stock" data-brand="gucci">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="mens/men-13.jpg" src="mens/men-13.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="mens/men-14.jpg" src="mens/men-14.jpg" alt="image-product">
+                            </a>
+                            <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
+                            <div class="marquee-product bg-main">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <span class="icon icon-lightning text-critical"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Polarized sunglasses</a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <span class="current-price"><i class="bi bi-currency-rupee"></i>79.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active">
+                                    <span class="d-none text-capitalize color-filter">Beige</span>
+                                    <span class="swatch-value bg-beige"></span>
+                                    <img class="lazyload" data-src="mens/men-13.jpg" src="mens/men-13.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Light Blue</span>
+                                    <span class="swatch-value bg-light-blue-2"></span>
+                                    <img class="lazyload" data-src="mens/men-12.jpg" src="mens/men-12.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 11 -->
+                    <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0.2s" data-availability="In stock" data-brand="zalando">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="mens/men-7.jpg" src="mens/men-7.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="mens/men-8.jpg" src="mens/men-8.jpg" alt="image-product">
+                            </a>
+                            <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
+                            <div class="variant-wrap size-list">
+                                <ul class="variant-box">
+                                    <li class="size-item">S</li>
+                                    <li class="size-item">M</li>
+                                    <li class="size-item">L</li>
+                                    <li class="size-item">XL</li>
+                                </ul>
+                            </div>
+                            <div class="variant-wrap countdown-wrap">
+                                <div class="variant-box">
+                                    <div class="js-countdown" data-timer="1007500" data-labels="D :,H :,M :,S"></div>
+                                </div>
+                            </div>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Ramie shirt with pockets </a>
+                            <div class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <span class="current-price"><i class="bi bi-currency-rupee"></i>89.99</span></div>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active line">
+                                    <span class="d-none text-capitalize color-filter">Green</span>
+                                    <span class="swatch-value bg-light-green"></span>
+                                    <img class="lazyload" data-src="mens/men-7.jpg" src="mens/men-7.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-light-grey"></span>
+                                    <img class="lazyload" data-src="mens/men-11.jpg" src="mens/men-11.jpg" alt="image-product">
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- card product 12 -->
+                    <div class="card-product wow fadeInUp" data-wow-delay="0.3s" data-availability="In stock" data-brand="adidas">
+                        <div class="card-product-wrapper">
+                            <a href="product-detail.html" class="product-img">
+                                <img class="lazyload img-product" data-src="mens/men-1.jpg" src="mens/men-1.jpg" alt="image-product">
+                                <img class="lazyload img-hover" data-src="mens/men-3.jpg" src="mens/men-3.jpg" alt="image-product">
+                            </a>
+                            <div class="list-product-btn">
+                                <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
+                                    <span class="icon icon-heart"></span>
+                                    <span class="tooltip">Wishlist</span>
+                                </a>
+                                <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
+                                    <span class="icon icon-gitDiff"></span>
+                                    <span class="tooltip">Compare</span>
+                                </a>
+                                <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="tooltip">Quick View</span>
+                                </a>
+                            </div>
+                            <div class="list-btn-main">
+                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
+                            </div> 
+                        </div>
+                        <div class="card-product-info">
+                            <a href="product-detail.html" class="title link">Ribbed cotton-blend top</a>
+                            <span class="price current-price"><i class="bi bi-currency-rupee"></i>69.99</span>
+                            <ul class="list-color-product">
+                                <li class="list-color-item color-swatch active line">
+                                    <span class="d-none text-capitalize color-filter">Light Blue</span>
+                                    <span class="swatch-value bg-light-blue"></span>
+                                    <img class="lazyload" data-src="mens/men-1.jpg" src="mens/men-1.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Pink</span>
+                                    <span class="swatch-value bg-light-pink"></span>
+                                    <img class="lazyload" data-src="mens/men-13.jpg" src="mens/men-13.jpg" alt="image-product">
+                                </li>
+                                <li class="list-color-item color-swatch">
+                                    <span class="d-none text-capitalize color-filter">Grey</span>
+                                    <span class="swatch-value bg-dark-grey-2"></span>
+                                    <img class="lazyload" data-src="mens/men-9.jpg" src="mens/men-9.jpg" alt="image-product">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <!-- pagination -->
+                    <ul class="wg-pagination justify-content-center">
+                        <li><a href="#" class="pagination-item text-button">1</a></li>
+                        <li class="active"><div class="pagination-item text-button">2</div></li>
+                        <li><a href="#" class="pagination-item text-button">3</a></li>
+                        <li><a href="#" class="pagination-item text-button"><i class="icon-arrRight"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <!-- /Section cart -->
-        <!-- Recent product -->
-        <section class="flat-spacing pt-0"> 
-            <div class="container">
-                <div class="heading-section text-center wow fadeInUp">
-                    <h4 class="heading">You may also like</h4>
-                </div>
-                <div dir="ltr" class="swiper tf-sw-recent" data-preview="4" data-tablet="3" data-mobile="2" data-space-lg="30" data-space-md="30" data-space="15" data-pagination="1" data-pagination-md="1" data-pagination-lg="1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card-product wow fadeInUp" data-wow-delay="0s">
-                                <div class="card-product-wrapper">
-                                    <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="image-product">
-                                        <img class="lazyload img-hover" data-src="womens/women-20.jpg" src="womens/women-20.jpg" alt="image-product">
-                                    </a>
-                                    <div class="list-product-btn">
-                                        <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
-                                            <span class="icon icon-heart"></span>
-                                            <span class="tooltip">Wishlist</span>
-                                        </a>
-                                        <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
-                                            <span class="icon icon-gitDiff"></span>
-                                            <span class="tooltip">Compare</span>
-                                        </a>
-                                        <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
-                                            <span class="icon icon-eye"></span>
-                                            <span class="tooltip">Quick View</span>
-                                        </a>
-                                    </div>
-                                    <div class="list-btn-main">
-                                        <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
-                                    </div> 
-                                </div>
-                                <div class="card-product-info">
-                                    <a href="product-detail.html" class="title link">V-neck cotton T-shirt</a>
-                                    <span class="price"><i class="bi bi-currency-rupee"></i>59.99</span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="card-product-wrapper">
-                                    <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
-                                        <img class="lazyload img-hover" data-src="womens/women-179.jpg" src="womens/women-179.jpg" alt="image-product">
-                                    </a>
-                                    <div class="on-sale-wrap"><span class="on-sale-item">-25%</span></div>
-                                    <div class="marquee-product bg-main">
-                                        <div class="marquee-wrapper">
-                                            <div class="initial-child-container">
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="marquee-wrapper">
-                                            <div class="initial-child-container">
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <p class="font-2 text-btn-uppercase fw-6 text-white">Hot Sale 25% OFF</p>
-                                                </div>
-                                                <div class="marquee-child-item">
-                                                    <span class="icon icon-lightning text-critical"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list-product-btn">
-                                        <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
-                                            <span class="icon icon-heart"></span>
-                                            <span class="tooltip">Wishlist</span>
-                                        </a>
-                                        <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
-                                            <span class="icon icon-gitDiff"></span>
-                                            <span class="tooltip">Compare</span>
-                                        </a>
-                                        <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
-                                            <span class="icon icon-eye"></span>
-                                            <span class="tooltip">Quick View</span>
-                                        </a>
-                                    </div>
-                                    <div class="list-btn-main">
-                                        <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
-                                    </div> 
-                                </div>
-                                <div class="card-product-info">
-                                    <a href="product-detail.html" class="title link">Polarized sunglasses</a>
-                                    <span class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <i class="bi bi-currency-rupee"></i>79.99</span>
-                                    <ul class="list-color-product">
-                                        <li class="list-color-item color-swatch active line">
-                                            <span class="swatch-value bg-light-blue"></span>
-                                            <img class="lazyload" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
-                                        </li>
-                                        <li class="list-color-item color-swatch">
-                                            <span class="swatch-value bg-light-blue-2"></span>
-                                            <img class="lazyload" data-src="womens/women-177.jpg" src="womens/women-177.jpg" alt="image-product">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="card-product-wrapper">
-                                    <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
-                                        <img class="lazyload img-hover" data-src="womens/women-30.jpg" src="womens/women-30.jpg" alt="image-product">
-                                    </a>
-                                    <div class="variant-wrap size-list">
-                                        <ul class="variant-box">
-                                            <li class="size-item">S</li>
-                                            <li class="size-item">M</li>
-                                            <li class="size-item">L</li>
-                                            <li class="size-item">XL</li>
-                                        </ul>
-                                    </div>
-                                    <div class="variant-wrap countdown-wrap">
-                                        <div class="variant-box">
-                                            <div class="js-countdown" data-timer="1007500" data-labels="D :,H :,M :,S"></div>
-                                        </div>
-                                    </div>
-                                    <div class="list-product-btn">
-                                        <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
-                                            <span class="icon icon-heart"></span>
-                                            <span class="tooltip">Wishlist</span>
-                                        </a>
-                                        <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
-                                            <span class="icon icon-gitDiff"></span>
-                                            <span class="tooltip">Compare</span>
-                                        </a>
-                                        <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
-                                            <span class="icon icon-eye"></span>
-                                            <span class="tooltip">Quick View</span>
-                                        </a>
-                                    </div>
-                                    <div class="list-btn-main">
-                                        <a href="#quickAdd" data-bs-toggle="modal" class="btn-main-product">Quick Add</a>
-                                    </div> 
-                                </div>
-                                <div class="card-product-info">
-                                    <a href="product-detail.html" class="title link">Ramie shirt with pockets </a>
-                                    <span class="price"><span class="old-price"><i class="bi bi-currency-rupee"></i>98.00</span> <i class="bi bi-currency-rupee"></i>89.99</span>
-                                    <ul class="list-color-product">
-                                        <li class="list-color-item color-swatch active line">
-                                            <span class="swatch-value bg-light-orange"></span>
-                                            <img class="lazyload" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
-                                        </li>
-                                        <li class="list-color-item color-swatch">
-                                            <span class="swatch-value bg-light-grey"></span>
-                                            <img class="lazyload" data-src="womens/women-33.jpg" src="womens/women-33.jpg" alt="image-product">
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-product wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="card-product-wrapper">
-                                    <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
-                                        <img class="lazyload img-hover" data-src="womens/women-2.jpg" src="womens/women-2.jpg" alt="image-product">
-                                    </a>
-                                    <div class="list-product-btn">
-                                        <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
-                                            <span class="icon icon-heart"></span>
-                                            <span class="tooltip">Wishlist</span>
-                                        </a>
-                                        <a href="#compare" data-bs-toggle="offcanvas" aria-controls="compare" class="box-icon compare btn-icon-action">
-                                            <span class="icon icon-gitDiff"></span>
-                                            <span class="tooltip">Compare</span>
-                                        </a>
-                                        <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
-                                            <span class="icon icon-eye"></span>
-                                            <span class="tooltip">Quick View</span>
-                                        </a>
-                                    </div>
-                                    <div class="list-btn-main">
-                                        <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add To cart</a>
-                                    </div> 
-                                </div>
-                                <div class="card-product-info">
-                                    <a href="product-detail.html" class="title link">Ribbed cotton-blend top</a>
-                                    <span class="price"><i class="bi bi-currency-rupee"></i>69.99</span>
-                                    <ul class="list-color-product">
-                                        <li class="list-color-item color-swatch active line">
-                                            <span class="swatch-value bg-dark-grey"></span>
-                                            <img class="lazyload" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
-                                        </li>
-                                        <li class="list-color-item color-swatch">
-                                            <span class="swatch-value bg-light-pink"></span>
-                                            <img class="lazyload" data-src="womens/women-2.jpg" src="womens/women-2.jpg" alt="image-product">
-                                        </li>
-                                        <li class="list-color-item color-swatch">
-                                            <span class="swatch-value bg-dark-grey-2"></span>
-                                            <img class="lazyload" data-src="womens/women-3.jpg" src="womens/women-3.jpg" alt="image-product">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sw-pagination-recent sw-dots type-circle justify-content-center"></div>
-                </div>
-            </div>
-        </section>
-        <!-- /Recent product -->
+        <!-- /Section product -->
+        
        
         <!-- Footer -->
         <footer id="footer" class="footer">
@@ -1862,7 +2023,7 @@
                         <div class="demo-item">
                             <a href="index.html">
                                 <div class="demo-image position-relative">
-                                    <img class="lazyload" data-src="demo/home-fashion-womenswear.jpg" src="demo/home-fashion-womenswear.jpg" alt="home-fashion-womenswear">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-womenswear.jpg" src="images/demo/home-fashion-womenswear.jpg" alt="home-fashion-womenswear">
                                     <div class="demo-label">
                                         <span class="demo-new">New</span>
                                         <span>Trend</span>
@@ -1874,7 +2035,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-eleganceNest.html">
                                 <div class="demo-image position-relative">
-                                    <img class="lazyload" data-src="demo/home-fashion-eleganceNest.jpg" src="demo/home-fashion-eleganceNest.jpg" alt="home-fashion-eleganceNest">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-eleganceNest.jpg" src="images/demo/home-fashion-eleganceNest.jpg" alt="home-fashion-eleganceNest">
                                     <div class="demo-label">
                                         <span class="demo-new">New</span>
                                         <span class="demo-hot">Hot</span>
@@ -1886,7 +2047,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-main.html">
                                 <div class="demo-image position-relative">
-                                    <img class="lazyload" data-src="demo/home-fashion-main.jpg" src="demo/home-fashion-main.jpg" alt="home-fashion-main">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-main.jpg" src="images/demo/home-fashion-main.jpg" alt="home-fashion-main">
                                     <div class="demo-label">
                                         <span class="demo-hot">Hot</span>
                                     </div>
@@ -1897,7 +2058,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-trendset.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-trendset.jpg" src="demo/home-fashion-trendset.jpg" alt="home-fashion-trendset">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-trendset.jpg" src="images/demo/home-fashion-trendset.jpg" alt="home-fashion-trendset">
                                 </div>
                                 <span class="demo-name">Fashion TrendsetHome</span>
                             </a>
@@ -1905,7 +2066,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-vogueLing.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-vogueLiving.jpg" src="demo/home-fashion-vogueLiving.jpg" alt="home-fashion-vogueLiving">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-vogueLiving.jpg" src="images/demo/home-fashion-vogueLiving.jpg" alt="home-fashion-vogueLiving">
                                 </div>
                                 <span class="demo-name">Fashion VogueLiving</span>
                             </a>
@@ -1913,7 +2074,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-elegantAbode.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-elegantAbode.jpg" src="demo/home-fashion-elegantAbode.jpg" alt="home-fashion-elegantAbode">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-elegantAbode.jpg" src="images/demo/home-fashion-elegantAbode.jpg" alt="home-fashion-elegantAbode">
                                 </div>
                                 <span class="demo-name">Fashion ElegantAbode</span>
                             </a>
@@ -1921,7 +2082,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-glamDwell.html">
                                 <div class="demo-image position-relative">
-                                    <img class="lazyload" data-src="demo/home-fashion-glamDwell.jpg" src="demo/home-fashion-glamDwell.jpg" alt="home-fashion-glamDwell">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-glamDwell.jpg" src="images/demo/home-fashion-glamDwell.jpg" alt="home-fashion-glamDwell">
                                     <div class="demo-label">
                                         <span class="demo-new">New</span>
                                     </div>
@@ -1932,7 +2093,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-classyCove.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-classycove.jpg" src="demo/home-fashion-classycove.jpg" alt="home-fashion-classyCove">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-classycove.jpg" src="images/demo/home-fashion-classycove.jpg" alt="home-fashion-classyCove">
                                 </div>
                                 <span class="demo-name">Fashion ClassyCove</span>
                             </a>
@@ -1940,7 +2101,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-chicHaven.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-chicHaven.jpg" src="demo/home-fashion-chicHaven.jpg" alt="home-fashion-chicHaven1">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-chicHaven.jpg" src="images/demo/home-fashion-chicHaven.jpg" alt="home-fashion-chicHaven1">
                                 </div>
                                 <span class="demo-name">Fashion ChicHaven 1</span>
                             </a>
@@ -1948,7 +2109,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-chicHaven-02.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-chicHaven2.jpg" src="demo/home-fashion-chicHaven2.jpg" alt="home-fashion-chicHaven2">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-chicHaven2.jpg" src="images/demo/home-fashion-chicHaven2.jpg" alt="home-fashion-chicHaven2">
                                 </div>
                                 <span class="demo-name">Fashion ChicHaven 2</span>
                             </a>
@@ -1956,7 +2117,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-tiktok.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-tiktok.jpg" src="demo/home-fashion-tiktok.jpg" alt="home-fashion-tiktok">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-tiktok.jpg" src="images/demo/home-fashion-tiktok.jpg" alt="home-fashion-tiktok">
                                 </div>
                                 <span class="demo-name">Fashion TikTok</span>
                             </a>
@@ -1964,7 +2125,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-luxeLiving.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-luxeLiving.jpg" src="demo/home-fashion-luxeLiving.jpg" alt="home-fashion-luxeLiving">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-luxeLiving.jpg" src="images/demo/home-fashion-luxeLiving.jpg" alt="home-fashion-luxeLiving">
                                 </div>
                                 <span class="demo-name">Fashion LuxeLiving</span>
                             </a>
@@ -1972,7 +2133,7 @@
                         <div class="demo-item">
                             <a href="home-fashion-modernRetreat.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-fashion-modernRetreat.jpg" src="demo/home-fashion-modernRetreat.jpg" alt="home-fashion-modernRetreat">
+                                    <img class="lazyload" data-src="images/demo/home-fashion-modernRetreat.jpg" src="images/demo/home-fashion-modernRetreat.jpg" alt="home-fashion-modernRetreat">
                                 </div>
                                 <span class="demo-name">Fashion ModernRetreat</span>
                             </a>
@@ -1980,7 +2141,7 @@
                         <div class="demo-item">
                             <a href="home-beauty.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-beauty.jpg" src="demo/home-beauty.jpg" alt="home-beauty">
+                                    <img class="lazyload" data-src="images/demo/home-beauty.jpg" src="images/demo/home-beauty.jpg" alt="home-beauty">
                                 </div>
                                 <span class="demo-name">Beauty</span>
                             </a>
@@ -1988,7 +2149,7 @@
                         <div class="demo-item">
                             <a href="home-skincare.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-skinCare.jpg" src="demo/home-skinCare.jpg" alt="home-skincare">
+                                    <img class="lazyload" data-src="images/demo/home-skinCare.jpg" src="images/demo/home-skinCare.jpg" alt="home-skincare">
                                 </div>
                                 <span class="demo-name">Skin Care</span>
                             </a>
@@ -1996,7 +2157,7 @@
                         <div class="demo-item">
                             <a href="home-cosmetic.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-cosmetic.jpg" src="demo/home-cosmetic.jpg" alt="home-cosmetic">
+                                    <img class="lazyload" data-src="images/demo/home-cosmetic.jpg" src="images/demo/home-cosmetic.jpg" alt="home-cosmetic">
                                 </div>
                                 <span class="demo-name">Cosmetic</span>
                             </a>
@@ -2004,7 +2165,7 @@
                         <div class="demo-item">
                             <a href="home-decor.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-decor.jpg" src="demo/home-decor.jpg" alt="home-decor">
+                                    <img class="lazyload" data-src="images/demo/home-decor.jpg" src="images/demo/home-decor.jpg" alt="home-decor">
                                 </div>
                                 <span class="demo-name">Decor</span>
                             </a>
@@ -2012,7 +2173,7 @@
                         <div class="demo-item">
                             <a href="home-furniture.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-furniture.jpg" src="demo/home-furniture.jpg" alt="home-furniture">
+                                    <img class="lazyload" data-src="images/demo/home-furniture.jpg" src="images/demo/home-furniture.jpg" alt="home-furniture">
                                 </div>
                                 <span class="demo-name">Furniture</span>
                             </a>
@@ -2020,7 +2181,7 @@
                         <div class="demo-item">
                             <a href="home-jewelry-01.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-jewelry.jpg" src="demo/home-jewelry.jpg" alt="home-jewelry-elegantGems">
+                                    <img class="lazyload" data-src="images/demo/home-jewelry.jpg" src="images/demo/home-jewelry.jpg" alt="home-jewelry-elegantGems">
                                 </div>
                                 <span class="demo-name">Jewelry ElegantGems</span>
                             </a>
@@ -2028,7 +2189,7 @@
                         <div class="demo-item">
                             <a href="home-jewelry-02.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-jewelry2.jpg" src="demo/home-jewelry2.jpg" alt="home-jewelry-glitterGlam">
+                                    <img class="lazyload" data-src="images/demo/home-jewelry2.jpg" src="images/demo/home-jewelry2.jpg" alt="home-jewelry-glitterGlam">
                                 </div>
                                 <span class="demo-name">Jewelry GlitterGlam</span>
                             </a>
@@ -2036,7 +2197,7 @@
                         <div class="demo-item">
                             <a href="home-activewear.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-activewear.jpg" src="demo/home-activewear.jpg" alt="home-activewear">
+                                    <img class="lazyload" data-src="images/demo/home-activewear.jpg" src="images/demo/home-activewear.jpg" alt="home-activewear">
                                 </div>
                                 <span class="demo-name">Activewear</span>
                             </a>
@@ -2044,7 +2205,7 @@
                         <div class="demo-item">
                             <a href="home-organic.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-organic.jpg" src="demo/home-organic.jpg" alt="home-organic">
+                                    <img class="lazyload" data-src="images/demo/home-organic.jpg" src="images/demo/home-organic.jpg" alt="home-organic">
                                 </div>
                                 <span class="demo-name">Organic</span>
                             </a>
@@ -2052,7 +2213,7 @@
                         <div class="demo-item">
                             <a href="home-sock.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-sock.jpg" src="demo/home-sock.jpg" alt="home-sock">
+                                    <img class="lazyload" data-src="images/demo/home-sock.jpg" src="images/demo/home-sock.jpg" alt="home-sock">
                                 </div>
                                 <span class="demo-name">Socks</span>
                             </a>
@@ -2060,7 +2221,7 @@
                         <div class="demo-item">
                             <a href="home-camping.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-camping.jpg" src="demo/home-camping.jpg" alt="home-camping">
+                                    <img class="lazyload" data-src="images/demo/home-camping.jpg" src="images/demo/home-camping.jpg" alt="home-camping">
                                 </div>
                                 <span class="demo-name">Camping</span>
                             </a>
@@ -2068,7 +2229,7 @@
                         <div class="demo-item">
                             <a href="home-electronic.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-electronic.jpg" src="demo/home-electronic.jpg" alt="home-electronic">
+                                    <img class="lazyload" data-src="images/demo/home-electronic.jpg" src="images/demo/home-electronic.jpg" alt="home-electronic">
                                 </div>
                                 <span class="demo-name">Electronic Market</span>
                             </a>
@@ -2076,7 +2237,7 @@
                         <div class="demo-item">
                             <a href="home-pet-store.html">
                                 <div class="demo-image">
-                                    <img class="lazyload" data-src="demo/home-pet-store.jpg" src="demo/home-pet-store.jpg" alt="home-pet-store">
+                                    <img class="lazyload" data-src="images/demo/home-pet-store.jpg" src="images/demo/home-pet-store.jpg" alt="home-pet-store">
                                 </div>
                                 <span class="demo-name">Pet Store</span>
                             </a>
@@ -2211,9 +2372,9 @@
                                         </a>
                                         <div id="sub-shop-four" class="collapse">
                                             <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="wish-list.html" class="sub-nav-link">Wish List</a></li>
+                                                <li><a href="wish-list.html" class="active sub-nav-link">Wish List</a></li>
                                                 <li><a href="search-result.html" class="sub-nav-link">Search Result</a></li>
-                                                <li><a href="shopping-cart.html" class="active sub-nav-link">Shopping Cart</a></li>
+                                                <li><a href="shopping-cart.html" class="sub-nav-link">Shopping Cart</a></li>
                                                 <li><a href="login.html" class="sub-nav-link">Login/Register</a></li>
                                                 <li><a href="forget-password.html" class="sub-nav-link">Forget Password</a></li>
                                                 <li><a href="order-tracking.html" class="sub-nav-link">Order Tracking</a></li>
@@ -2379,8 +2540,8 @@
                 <div class="bottom-bar-language">
                     <div class="tf-currencies">
                         <select class="image-select center style-default type-currencies">
-                            <option selected data-thumbnail="country/us.svg">USD</option>
-                            <option data-thumbnail="country/vn.svg">VND</option>
+                            <option selected data-thumbnail="images/country/us.svg">USD</option>
+                            <option data-thumbnail="images/country/vn.svg">VND</option>
                         </select>
                     </div>
                     <div class="tf-languages">
@@ -2406,83 +2567,83 @@
             <div class="canvas-body">
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forWomen" data-bs-toggle="collapse" aria-expanded="true" aria-controls="forWomen">
-                        <img class="avt" src="avatar/women.jpg" alt="avt">
+                        <img class="avt" src="images/avatar/women.jpg" alt="avt">
                         <span class="title">For Women</span>
                         <span class="icon icon-arrow-down"></span>
                     </div>
                     <div id="forWomen" class="collapse">
                         <ul class="facet-body">
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/new-in.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">New in</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/new-in.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">New in</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/promotion.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Promotion</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/promotion.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Promotion</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/clothing.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Clothing</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/clothing.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Clothing</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/shoes.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Shoes</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/shoes.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Shoes</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/bags.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Bags</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/bags.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Bags</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/jewelry.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Jewelry</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/jewelry.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Jewelry</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forMen" data-bs-toggle="collapse" aria-expanded="true" aria-controls="forMen">
-                        <img class="avt" src="avatar/men.jpg" alt="avt">
+                        <img class="avt" src="images/avatar/men.jpg" alt="avt">
                         <span class="title">For Men</span>
                         <span class="icon icon-arrow-down"></span>
                     </div>
                     <div id="forMen" class="collapse">
                         <ul class="facet-body">
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/men.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Men</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/men.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Men</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/men.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Men</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/men.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Men</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forKid" data-bs-toggle="collapse" aria-expanded="true" aria-controls="forKid">
-                        <img class="avt" src="avatar/kid.jpg" alt="avt">
+                        <img class="avt" src="images/avatar/kid.jpg" alt="avt">
                         <span class="title">For Kid</span>
                         <span class="icon icon-arrow-down"></span>
                     </div>
                     <div id="forKid" class="collapse">
                         <ul class="facet-body">
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/kid.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Kid</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/kid.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Kid</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/kid.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Kid</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/kid.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Kid</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#accessories" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accessories">
-                        <img class="avt" src="avatar/accessories.jpg" alt="avt">
+                        <img class="avt" src="images/avatar/accessories.jpg" alt="avt">
                         <span class="title">Accessories</span>
                         <span class="icon icon-arrow-down"></span>
                     </div>
                     <div id="accessories" class="collapse">
                         <ul class="facet-body">
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
                             </li>
                             <li>
-                                <a href="#" class="item link"><img class="avt" src="avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
+                                <a href="#" class="item link"><img class="avt" src="images/avatar/accessories.jpg" alt="avt"><span class="title-sub text-caption-1 text-secondary">Accessories</span></a>
                             </li>
                         </ul>
                     </div>
@@ -3064,108 +3225,6 @@
     </div>
     <!-- /shoppingCart -->
 
-    <!-- wishlist -->
-    <div class="modal fullRight fade modal-wishlist" id="wishlist">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="header">
-                    <h5 class="title">Wish List</h5>
-                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
-                </div>
-                <div class="wrap">
-                    <div class="tf-mini-cart-wrap">
-                        <div class="tf-mini-cart-main">
-                            <div class="tf-mini-cart-sroll">
-                                <div class="tf-mini-cart-items">
-                                    <div class="tf-mini-cart-item file-delete">
-                                        <div class="tf-mini-cart-image">
-                                            <img class="lazyload" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="">
-                                        </div>
-                                        <div class="tf-mini-cart-info flex-grow-1">
-                                            <div class="mb_12 d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-title"><a href="product-detail.html" class="link text-line-clamp-1">Contrasting sheepskin</a></div>
-                                                <div class="text-button tf-btn-remove remove">Remove</div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-secondary-2">XL/Blue</div>
-                                                <div class="text-button">1 X <i class="bi bi-currency-rupee"></i>60.00</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tf-mini-cart-item file-delete">
-                                        <div class="tf-mini-cart-image">
-                                            <img class="lazyload" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="">
-                                        </div>
-                                        <div class="tf-mini-cart-info flex-grow-1">
-                                            <div class="mb_12 d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-title"><a href="product-detail.html" class="link text-line-clamp-1">Suede leggings</a></div>
-                                                <div class="text-button tf-btn-remove remove">Remove</div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-secondary-2">XL/Blue</div>
-                                                <div class="text-button">1 X <i class="bi bi-currency-rupee"></i>60.00</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tf-mini-cart-item file-delete">
-                                        <div class="tf-mini-cart-image">
-                                            <img class="lazyload" data-src="womens/women-2.jpg" src="womens/women-2.jpg" alt="">
-                                        </div>
-                                        <div class="tf-mini-cart-info flex-grow-1">
-                                            <div class="mb_12 d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-title"><a href="product-detail.html" class="link text-line-clamp-1">Faux-leather trousers</a></div>
-                                                <div class="text-button tf-btn-remove remove">Remove</div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-secondary-2">XL/Blue</div>
-                                                <div class="text-button">1 X <i class="bi bi-currency-rupee"></i>60.00</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tf-mini-cart-item file-delete">
-                                        <div class="tf-mini-cart-image">
-                                            <img class="lazyload" data-src="womens/women-3.jpg" src="womens/women-3.jpg" alt="">
-                                        </div>
-                                        <div class="tf-mini-cart-info flex-grow-1">
-                                            <div class="mb_12 d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-title"><a href="product-detail.html" class="link text-line-clamp-1">Biker-style leggings</a></div>
-                                                <div class="text-button tf-btn-remove remove">Remove</div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-secondary-2">XL/Blue</div>
-                                                <div class="text-button">1 X <i class="bi bi-currency-rupee"></i>60.00</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tf-mini-cart-item file-delete">
-                                        <div class="tf-mini-cart-image">
-                                            <img class="lazyload" data-src="womens/women-4.jpg" src="womens/women-4.jpg" alt="">
-                                        </div>
-                                        <div class="tf-mini-cart-info flex-grow-1">
-                                            <div class="mb_12 d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-title"><a href="product-detail.html" class="link text-line-clamp-1">Jacquard fluid trousers</a></div>
-                                                <div class="text-button tf-btn-remove remove">Remove</div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-12">
-                                                <div class="text-secondary-2">XL/Blue</div>
-                                                <div class="text-button">1 X <i class="bi bi-currency-rupee"></i>60.00</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tf-mini-cart-bottom">
-                            <a href="wish-list.html" class="btn-style-2 w-100 radius-4 view-all-wishlist"><span class="text-btn-uppercase">View All Wish List</span></a>
-                            <a href="shop-default-grid.html" class="text-btn-uppercase">Or continue shopping</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /wishlist -->
-
     <!-- size-guide -->
     <div class="modal fade modal-size-guide" id="size-guide">
         <div class="modal-dialog modal-dialog-centered">
@@ -3553,5 +3612,5 @@
 </body>
 
 
-<!-- Mirrored from themesflat.co/html/modave/shopping-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:28:26 GMT -->
+<!-- Mirrored from themesflat.co/html/modave/wish-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:28:24 GMT -->
 </html>
