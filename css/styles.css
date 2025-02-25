@@ -15422,6 +15422,8 @@ button .icon {
   }
   footer .footer-body {
     padding: 40px 0;
+    /* text-align:center;
+    justify-content:center; */
   }
   footer.has-pb {
     padding-bottom: 165px;
@@ -16804,5 +16806,15 @@ button .icon {
     display:none;
   }
 }
+
+
+.text-logo{
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
 
 /*# sourceMappingURL=styles.css.map */
