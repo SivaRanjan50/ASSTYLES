@@ -546,19 +546,49 @@
                                         <span class="icon-close close-filter"></span>
                                     </div>
                                     <div class="canvas-body">
+                                        <!-- -----------gender------------- -->
                                         <div class="widget-facet facet-categories">
-                                            <h6 class="facet-title">Gender</h6>
-                                            <ul class="facet-content">
-                                                <!-- <li><a href="#" class="categories-item active" data-filter="all">All</a></li> -->
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong>Gender</strong>
+                                                <span class="toggle-indicator">−</span>
+                                            </div>
+                                            <!-- <ul class="facet-content">
                                                 <li><a href="#" class="categories-item text-font" data-filter="men">Men <span class="count-cate">(100)</span></a></li>
                                                 <li><a href="#" class="categories-item text-font" data-filter="women">Women <span class="count-cate">(13)</span></a></li>
                                                 <li><a href="#" class="categories-item text-font" data-filter="kids">kids <span class="count-cate">(52)</span></a></li>
-                                            </ul>
+                                            </ul> -->
+                                            <div class="facet-content filter-options_01 active">
+                                                <div class="filter-item_01">
+                                                    <label>
+                                                        <a href="#" class="categories-item text-font" data-filter="men">Men <span class="count-cate">(100)</span></a>
+                                                    </label>
+                                                </div>
+                                                <div class="filter-item_01">
+                                                    <label>
+                                                        <a href="#" class="categories-item text-font" data-filter="women">Women <span class="count-cate">(13)</span></a>
+                                                    </label>
+                                                </div>
+                                                <div class="filter-item_01">
+                                                    <label>
+                                                        <a href="#" class="categories-item text-font" data-filter="kids">kids <span class="count-cate">(52)</span></a>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="widget-facet facet-price">
-                                            <h6 class="facet-title">Price</h6>
-                                            <div class="price-val-range" id="price-value-range" data-min="0" data-max="10000"></div>
-                                            <div class="box-price-product">
+                                        <!-- -----------gender------------- -->
+                                        <!-- <div class="price-val-range" id="price-value-range" data-min="0" data-max="10000"></div> -->
+                                        <!-- ---------------------price----------------- -->
+                                        
+                                        <div class="widget-facet facet-price filter-section_01">
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong class="facet-title">Price</strong>
+                                                <span class="toggle-indicator">+</span>
+                                            </div>
+                                            <div class="price-val-range" id="price-value-range" data-min="0" data-max="10000">
+                                                
+                                            </div>
+                                            <div class="box-price-product filter-options_01">
+                                               
                                                 <div class="box-price-item">
                                                     <span class="title-price">Min price</span>
                                                     <div class="price-val" id="price-min-value" data-currency="₹"></div>
@@ -569,49 +599,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="widget-facet facet-price">
-                                            <h6 class="facet-title">Price</h6>
-                                            <div class="price-filter-options">
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="all" data-min="0" data-max="10000" class="tf-check active"> All
-                                                </label>
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="under-500" data-min="0" data-max="500" class="tf-check"> Under 500
-                                                </label>
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="under-1000" data-min="0" data-max="1000" class="tf-check"> Under 1000
-                                                </label>
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="under-2000" data-min="0" data-max="2000" class="tf-check"> Under 2000
-                                                </label>
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="under-5000" data-min="0" data-max="5000" class="tf-check"> Under 5000
-                                                </label>
-                                                <label class="price-option">
-                                                    <input type="checkbox" name="price" value="5000-above" data-min="0" data-max="10000" class="tf-check"> 5000 and above
-                                                </label>
+                                         <!-- ---------------------price----------------- -->
+                                       
+                                         <!-- ---------------------Size----------------- -->
+                                        <div class="widget-facet facet-size filter-section_01">
+                                            <!-- <h6 class="facet-title">Size</h6> -->
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong class="facet-title">Size</strong>
+                                                <span class="toggle-indicator">+</span>
                                             </div>
-                                        </div> -->
-
-                                        <!-- <div class="widget-facet facet-fieldset">
-                                            <h6 class="facet-title">Price</h6>
-                                            <div class="box-fieldset-item">
-                                                <fieldset class="fieldset-item">
-                                                    <input type="checkbox" name="price" value="all" data-min="0" data-max="10000" class="tf-check" id="">
-                                                    <label class="price-option">
-                                                        <input type="checkbox" name="price" value="all" data-min="0" data-max="10000" class="tf-check active"> All
-                                                    </label>
-                                                </fieldset>
-                                                <fieldset class="fieldset-item">
-                                                    <input type="radio" name="availability" class="tf-check" id="outStock">
-                                                    <label for="outStock">Out of stock <span class="count-stock">(2)</span></label>
-                                                </fieldset>
-                                            </div>
-                                        </div> -->
-
-                                        <div class="widget-facet facet-size">
-                                            <h6 class="facet-title">Size</h6>
-                                            <div class="facet-size-box size-box">
+                                            <div class="facet-size-box size-box filter-options_01">
                                                 <span class="size-item size-check">XS</span>
                                                 <span class="size-item size-check">S</span>
                                                 <span class="size-item size-check">M</span>
@@ -620,9 +617,16 @@
                                                 <span class="size-item size-check">XXL</span>
                                             </div>
                                         </div>
-                                        <!-- <div class="widget-facet facet-color">
-                                            <h6 class="facet-title">Colors</h6>
-                                            <div class="facet-color-box">
+                                        <!-- ---------------------Size----------------- -->
+
+                                        <!-- ---------------------colors----------------- -->
+                                        <div class="widget-facet facet-color filter-section_01">
+                                            
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong class="facet-title">Colors</strong>
+                                                <span class="toggle-indicator">+</span>
+                                            </div>
+                                            <div class="facet-color-box filter-options_01">
                                                 <div class="color-item color-check"><span class="color bg-light-pink-2"></span>Pink</div>
                                                 <div class="color-item color-check"><span class="color bg-red"></span> Red</div>
                                                 <div class="color-item color-check"><span class="color bg-beige-2"></span>Beige</div>
@@ -635,10 +639,17 @@
                                                 <div class="color-item color-check"><span class="color bg-light-blue-5"></span>Light Blue</div>
                                                 <div class="color-item color-check"><span class="color bg-dark-blue"></span>Dark Blue</div>            
                                             </div>
-                                        </div> -->
-                                        <div class="widget-facet facet-fieldset">
-                                            <h6 class="facet-title">Availability</h6>
-                                            <div class="box-fieldset-item">
+                                        </div>
+                                        <!-- ---------------------colors----------------- -->
+
+                                        <!-- ---------------------stocks----------------- -->
+                                        <div class="widget-facet facet-fieldset filter-section_01">
+                                            
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong class="facet-title">Availability</strong>
+                                                <span class="toggle-indicator">+</span>
+                                            </div>
+                                            <div class="box-fieldset-item filter-options_01">
                                                 <fieldset class="fieldset-item">
                                                     <input type="radio" name="availability" class="tf-check" id="inStock">
                                                     <label for="inStock">In stock <span class="count-stock">(32)</span></label>
@@ -649,9 +660,17 @@
                                                 </fieldset>
                                             </div>
                                         </div>
-                                        <div class="widget-facet facet-fieldset">
-                                            <h6 class="facet-title">Brands</h6>
-                                            <div class="box-fieldset-item">
+                                        <!-- ---------------------stocks----------------- -->
+
+                                        <!-- ---------------------Brands----------------- -->
+                                        <div class="widget-facet facet-fieldset filter-section_01">
+                                            
+                                            <div class="filter-header_01" onclick="toggleFilter(this)">
+                                                <strong class="facet-title">Brands</strong>
+                                                <span class="toggle-indicator">+</span>
+                                            </div>
+                                            
+                                            <div class="box-fieldset-item filter-options_01">
                                                 <fieldset class="fieldset-item">
                                                     <input type="checkbox" name="brand" class="tf-check" id="nike">
                                                     <label for="nike">Nike <span class="count-brand">(112)</span></label>
@@ -678,6 +697,8 @@
                                                 </fieldset>
                                             </div>
                                         </div>
+                                        <!-- ---------------------Brands----------------- -->
+
                                     </div>
                                     <div class="canvas-bottom d-block d-xl-none">
                                         <button id="reset-filter" class="tf-btn btn-reset">Reset Filters</button>
@@ -686,9 +707,15 @@
                             </div>
                         </div>
                         <div class="col-xl-9">
+                            <div class="meta-filter-shop">
+                                <div id="product-count-grid" class="count-text"></div>
+                                <div id="product-count-list" class="count-text"></div>
+                                <div id="applied-filters"></div>
+                                <button id="remove-all" class="remove-all-filters text-btn-uppercase" style="display: none;">REMOVE ALL <i class="icon icon-close"></i></button>
+                            </div>
                             <div class="tf-list-layout wrapper-shop" id="listLayout">
                                 <!-- card product list 1 -->
-                                <div class="card-product style-list" data-availability="Out of stock" data-brand="adidas">
+                                <div class="loadItem card-product style-list" data-availability="Out of stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="image-product">
@@ -744,7 +771,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 2 -->
-                                <div class="card-product style-list" data-availability="Out of stock" data-brand="LV">
+                                <div class="loadItem card-product style-list" data-availability="Out of stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
@@ -802,7 +829,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 3 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="nike">
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-63.jpg" src="womens/women-63.jpg" alt="image-product">
@@ -859,7 +886,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 4 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="gucci">   
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="gucci">   
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-37.jpg" src="womens/women-37.jpg" alt="image-product">
@@ -913,7 +940,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 5 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="hermes">
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-133.jpg" src="womens/women-133.jpg" alt="image-product">
@@ -964,7 +991,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 6 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="nike">
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-167.jpg" src="womens/women-167.jpg" alt="image-product">
@@ -1010,7 +1037,7 @@
                                     </div>
                                 </div>
                                 <!-- card product list 7 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="LV">
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-83.jpg" src="womens/women-83.jpg" alt="image-product">
@@ -1064,8 +1091,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <!-- card product list 8 -->
-                                <div class="card-product style-list" data-availability="In stock" data-brand="adidas">
+                                <div class="loadItem card-product style-list" data-availability="In stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-12.jpg" src="womens/women-12.jpg" alt="image-product">
@@ -1119,17 +1147,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- pagination -->
-                                <ul class="wg-pagination">
-                                    <li><a href="#" class="pagination-item text-button">1</a></li>
-                                    <li class="active"><div class="pagination-item text-button">2</div></li>
-                                    <li><a href="#" class="pagination-item text-button">3</a></li>
-                                    <li><a href="#" class="pagination-item text-button"><i class="icon-arrRight"></i></a></li>
-                                </ul>
+                                
+                                
+                               
+                                <!-- Load item -->
+                                <div class="wd-load d-flex justify-content-center">
+                                    <button id="infiniteScrollList" class="load-more-btn btn-out-line btn-infinite-scroll tf-loading"></button> 
+                                </div>
                             </div>
                             <div class="tf-grid-layout wrapper-shop tf-col-3" id="gridLayout">
                                 <!-- card product 1 -->
-                                <div class="card-product item clothes-filter grid women" data-availability="Out of stock" data-brand="adidas">
+                                <div class="loadItem card-product item clothes-filter grid women" data-availability="Out of stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-19.jpg" src="womens/women-19.jpg" alt="image-product">
@@ -1159,7 +1187,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 2 -->
-                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="nike">
+                                <div class="loadItem card-product item clothes-filter grid kids" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-176.jpg" src="womens/women-176.jpg" alt="image-product">
@@ -1272,7 +1300,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 3 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-29.jpg" src="womens/women-29.jpg" alt="image-product">
@@ -1328,7 +1356,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 4 -->
-                                <div class="card-product item item clothes-filter grid women" data-availability="Out of stock" data-brand="gucci">
+                                <div class="loadItem card-product item item clothes-filter grid women" data-availability="Out of stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-1.jpg" src="womens/women-1.jpg" alt="image-product">
@@ -1375,7 +1403,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 5 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="Out of stock" data-brand="hermes">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="Out of stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-8.jpg" src="womens/women-8.jpg" alt="image-product">
@@ -1413,7 +1441,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 6 -->
-                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="zalando">
+                                <div class="loadItem card-product item clothes-filter grid kids" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-171.jpg" src="womens/women-171.jpg" alt="image-product">
@@ -1456,7 +1484,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 7 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-83.jpg" src="womens/women-83.jpg" alt="image-product">
@@ -1512,7 +1540,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 8 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-102.jpg" src="womens/women-102.jpg" alt="image-product">
@@ -1568,7 +1596,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 9 -->
-                                <div class="card-product item clothes-filter grid men" data-availability="In stock" data-brand="hermes">
+                                <div class="loadItem card-product item clothes-filter grid men" data-availability="In stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-11.jpg" src="mens/men-11.jpg" alt="image-product">
@@ -1598,7 +1626,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 10 -->
-                                <div class="card-product item clothes-filter grid men"  data-availability="In stock" data-brand="gucci">
+                                <div class="loadItem card-product item clothes-filter grid men"  data-availability="In stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-13.jpg" src="mens/men-13.jpg" alt="image-product">
@@ -1711,7 +1739,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 11 -->
-                                <div class="card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="zalando">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-7.jpg" src="mens/men-7.jpg" alt="image-product">
@@ -1768,7 +1796,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 12 -->
-                                <div class="card-product item clothes-filter grid men" data-availability="In stock" data-brand="adidas">
+                                <div class="loadItem card-product item clothes-filter grid men" data-availability="In stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-1.jpg" src="mens/men-1.jpg" alt="image-product">
@@ -1815,7 +1843,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 13 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="nike">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-37.jpg" src="womens/women-37.jpg" alt="image-product">
@@ -1865,7 +1893,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 14 -->
-                                <div class="card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="LV">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size kids" data-availability="In stock" data-brand="LV">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-15.jpg" src="mens/men-15.jpg" alt="image-product">
@@ -1921,7 +1949,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 15 -->
-                                <div class="card-product item clothes-filter grid kids" data-availability="In stock" data-brand="gucci">
+                                <div class="loadItem card-product item clothes-filter grid kids" data-availability="In stock" data-brand="gucci">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-167.jpg" src="womens/women-167.jpg" alt="image-product">
@@ -1964,7 +1992,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 16 -->
-                                <div class="card-product item clothes-filter grid card-product-size men" data-availability="In stock" data-brand="adidas">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size men" data-availability="In stock" data-brand="adidas">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="mens/men-19.jpg" src="mens/men-19.jpg" alt="image-product">
@@ -2004,7 +2032,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 17 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="hermes">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="hermes">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-73.jpg" src="womens/women-73.jpg" alt="image-product">
@@ -2060,7 +2088,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 18 -->
-                                <div class="card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="zalando">
+                                <div class="loadItem card-product item clothes-filter grid card-product-size women" data-availability="In stock" data-brand="zalando">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="womens/women-132.jpg" src="womens/women-132.jpg" alt="image-product">
@@ -2117,14 +2145,12 @@
                                 </div>
                                 
                                
-                                <!-- pagination -->
-                                <ul class="wg-pagination justify-content-center">
-                                    <li><a href="#" class="pagination-item text-button">1</a></li>
-                                    <li class="active"><div class="pagination-item text-button">2</div></li>
-                                    <li><a href="#" class="pagination-item text-button">3</a></li>
-                                    <li><a href="#" class="pagination-item text-button"><i class="icon-arrRight"></i></a></li>
-                                </ul>
+                                <!-- Load Item -->
+                                <div class="wd-load d-flex justify-content-center">
+                                    <button id="infiniteScrollGrid" class="load-more-btn btn-out-line btn-infinite-scroll tf-loading"></button>
+                                </div> 
                             </div>
+                            
                         </div>
                     </div>
                     
@@ -4430,6 +4456,7 @@
     <script type="text/javascript" src="js/shop.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/tap-filter.js"></script>
+    <script src="js/add.js"></script>
 
     <script defer src="../../../sibforms.com/forms/end-form/build/main.js"></script>
     <script>

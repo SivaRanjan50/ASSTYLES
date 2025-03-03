@@ -10935,8 +10935,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 20px;
 }
 .widget-facet:not(:last-child) {
-  margin-bottom: 10px;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 1px;
+  /* border-bottom: 1px solid var(--line); */
 }
 .widget-facet .facet-title {
   margin-bottom: 10px;
@@ -11004,7 +11004,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .widget-facet .facet-size-box .size-item:not(.free-size) {
   width: 40px;
   height: 40px;
-  font-size:15px;
+  font-size:12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13715,7 +13715,7 @@ ul.list-text.type-number {
   }
 
   .widget-facet {
-    padding-bottom: 32px;
+    padding-bottom: 10px;
   }
   .widget-facet.facet-price .box-price-product {
     gap: 20px;
