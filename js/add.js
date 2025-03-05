@@ -65,3 +65,37 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 });
+
+
+ // Pause carousel on hover for better zoom interaction
+ const zoomCarousel = new bootstrap.Carousel(document.getElementById('zoomCarousel'), {
+    interval: 2000,
+    pause: 'hover'
+});
+
+// Add smooth transitions
+document.querySelectorAll('.carousel-item').forEach(item => {
+    item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+});
+
+
+
+// -----------------product slider----------------
+// document.addEventListener("DOMContentLoaded", function() {
+//     const slider = document.getElementById("slider");
+//     const prevBtn = document.getElementById("prevBtn");
+//     const nextBtn = document.getElementById("nextBtn");
+//     const scrollAmount = 320; // Adjusted for 300px width + 20px gap
+
+//     function scrollSlider(direction) {
+//         slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
+//     }
+
+//     prevBtn.addEventListener("click", function() {
+//         scrollSlider(-1);
+//     });
+
+//     nextBtn.addEventListener("click", function() {
+//         scrollSlider(1);
+//     });
+// });
