@@ -9,23 +9,6 @@
     indicator.textContent = options.classList.contains('active') ? '−' : '+';
 }
 
-  // Initialize first filter as open
-//   document.querySelector('.filter-section_01:first-child .filter-options_01').classList.add('active');
-// function toggleFilter(header) {
-//   const section = header.parentElement;
-//   const priceRange = section.querySelector('.price-val-range');
-//   const options = section.querySelector('.filter-options_01');
-//   const indicator = header.querySelector('.toggle-indicator');
-  
-//   // Toggle both elements
-//   priceRange.classList.toggle('active');
-//   options.classList.toggle('active');
-  
-//   // Update indicator based on state
-//   indicator.textContent = options.classList.contains('active') ? '−' : '+';
-// }
-
-
 document.addEventListener("DOMContentLoaded", function () {
     let page = 2; // Start from page 2 as first page is already loaded
     let isLoading = false;
