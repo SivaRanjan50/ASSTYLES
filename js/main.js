@@ -310,9 +310,9 @@
   /* Infinite Scroll
   -------------------------------------------------------------------------*/
   var loadItem = function () {
-    const gridInitialItems = 9;
+    const gridInitialItems = 8;
     const listInitialItems = 4;
-    const gridItemsPerPage = 6;
+    const gridItemsPerPage = 4;
     const listItemsPerPage = 2;
 
     let listItemsDisplayed = listInitialItems;
@@ -339,7 +339,7 @@
 
       return itemsDisplayed + itemsPerPage;
     }
-    
+
     function updateLastVisible(layout) {
       layout.find(".loadItem").removeClass("last-visible");
       layout
@@ -616,7 +616,7 @@
         var newPrice = parseFloat($(this).data("price")) || basePrice;
         quantityInput.val(1);
         productItem.find(".price-on-sale").text(
-          "₹" + newPrice.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "$" + newPrice.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         );
         updateTotalPrice(newPrice, productItem);
       });
@@ -640,7 +640,7 @@
         var quantity = parseInt(scope.find(".quantity-product").val());
         var totalPrice = currentPrice * quantity;
         scope.find(".total-price").text(
-          "₹" + totalPrice.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "$" + totalPrice.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         );
       }
     });
@@ -1212,20 +1212,6 @@
       }, 100);
     }
   };
-
-
-  /* filter + and - 
-  ----------------------------------------------------------------------------*/
-//   function toggleFilter(header) {
-//     const section = header.parentElement;
-//     const options = section.querySelector('.filter-options_01');
-//     const indicator = header.querySelector('.toggle-indicator');
-    
-//     options.classList.toggle('active');
-//     indicator.textContent = options.classList.contains('active') ? '−' : '+';
-// }
-
-//   document.querySelector('.filter-section_01:first-child .filter-options_01').classList.add('active');
 
 
 

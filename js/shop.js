@@ -122,7 +122,7 @@
       }
       if (filters.minPrice > minPrice || filters.maxPrice < maxPrice) {
         appliedFilters.append(
-          `<span class="filter-tag">₹${filters.minPrice} - ₹${filters.maxPrice} <span class="remove-tag icon-close" data-filter="price"></span></span>`
+          `<span class="filter-tag">$${filters.minPrice} - $${filters.maxPrice} <span class="remove-tag icon-close" data-filter="price"></span></span>`
         );
       }
       if (filters.color) {

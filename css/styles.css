@@ -1109,8 +1109,8 @@ a:focus, a:hover {
 }
 
 .flat-spacing {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .flat-spacing-2 {
@@ -1889,9 +1889,7 @@ a:focus, a:hover {
 }
 
 .logo-header img {
-  /* width: 144px; */
-  width:80px;
-
+  width: 144px;
 }
 
 .box-nav-ul .menu-item {
@@ -10935,11 +10933,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 20px;
 }
 .widget-facet:not(:last-child) {
-  margin-bottom: 1px;
-  /* border-bottom: 1px solid var(--line); */
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
 }
 .widget-facet .facet-title {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .widget-facet.facet-categories li:not(:last-child) {
   margin-bottom: 12px;
@@ -10982,7 +10980,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .widget-facet .facet-size-box {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 2px;
+  column-gap: 12px;
   row-gap: 16px;
   padding-right: 20px;
 }
@@ -11002,9 +11000,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   cursor: pointer;
 }
 .widget-facet .facet-size-box .size-item:not(.free-size) {
-  width: 40px;
-  height: 40px;
-  font-size:12px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12436,7 +12433,7 @@ ul.list-text.type-number {
   display: flex;
   overflow: hidden;
   width: 100%;
-  padding: 6px 0;
+  padding: 16px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -13715,7 +13712,7 @@ ul.list-text.type-number {
   }
 
   .widget-facet {
-    padding-bottom: 10px;
+    padding-bottom: 32px;
   }
   .widget-facet.facet-price .box-price-product {
     gap: 20px;
@@ -15422,8 +15419,6 @@ button .icon {
   }
   footer .footer-body {
     padding: 40px 0;
-    /* text-align:center;
-    justify-content:center; */
   }
   footer.has-pb {
     padding-bottom: 165px;
@@ -16716,7 +16711,6 @@ button .icon {
   border-right: 0;
   border-left: 1px solid var(--line);
 }
-
 @keyframes slide-har-reverse {
   0% {
     -webkit-transform: translateX(0%);
@@ -16798,23 +16792,5 @@ button .icon {
     transform: translateX(100%);
   }
 }
-
-/* -------------additional process------------------------ */
-
-@media(min-width:1199px){
-  .filterShop{
-    display:none;
-  }
-}
-
-
-.text-logo{
-  font-family: "Dancing Script", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
 
 /*# sourceMappingURL=styles.css.map */
