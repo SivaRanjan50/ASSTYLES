@@ -10930,11 +10930,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .widget-facet {
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 }
 .widget-facet:not(:last-child) {
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 2px;
+  /* border-bottom: 1px solid var(--line); */
 }
 .widget-facet .facet-title {
   margin-bottom: 16px;
@@ -13712,7 +13712,7 @@ ul.list-text.type-number {
   }
 
   .widget-facet {
-    padding-bottom: 32px;
+    padding-bottom: 2px;
   }
   .widget-facet.facet-price .box-price-product {
     gap: 20px;
