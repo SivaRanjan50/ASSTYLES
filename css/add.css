@@ -6,6 +6,9 @@
   .slider-2{
     /* height:50vh; */
   }
+  .text-logo{
+    color:var(--main)
+  }
   
 
   /* ---------------filter ----------- */
@@ -139,4 +142,10 @@
   .filterShop{
     display:none;
   }
+}
+
+/* ----------------------------- */
+
+.men-slider-01{
+  height:50vh;
 }

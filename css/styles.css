@@ -415,7 +415,7 @@ h5,
 h6 {
   font-family: "Kumbh Sans", sans-serif;
   text-rendering: optimizeLegibility;
-  color: var(--main);
+  color: var(--white);
   font-weight: 500;
 }
 
@@ -475,7 +475,9 @@ h6 {
   line-height: 26px;
   font-weight: 600;
 }
-
+.subheading{
+  color:var(--white);
+}
 .text-btn-uppercase {
   font-size: 12px;
   line-height: 20px;
@@ -1110,7 +1112,7 @@ a:focus, a:hover {
 
 .flat-spacing {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 .flat-spacing-2 {
@@ -4494,6 +4496,10 @@ form .cols > * {
   font-size: 28px;
   line-height: 33.6px;
   margin: 20px 0px;
+  
+}
+.title{
+  color:var(--main) !important;
 }
 .wd-form-address .box-field {
   margin-bottom: 15px;
@@ -4916,7 +4922,7 @@ form .cols > * {
   width: 24px;
   height: 4px;
   border-radius: 99px;
-  background-color: var(--main);
+  background-color: var(--white);
   opacity: 0.3;
 }
 .sw-dots.type-square .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -7533,8 +7539,11 @@ form .cols > * {
 .collection-circle.style-1 .collection-content {
   margin-top: 20px;
 }
-.collection-circle.style-1 .collection-content .heading {
+.collection-circle.style-1, .collection-content, .heading {
   margin-bottom: 12px;
+}
+.heading1, .brand-h, .d-f-day, .s-sale{
+  color:var(--main);
 }
 
 .flat-collection-circle {
@@ -13392,6 +13401,7 @@ ul.list-text.type-number {
 }
 
 .banner-supper-sale {
+  margin-top:20px;
   padding: 21px 15px;
   display: flex;
   align-items: center;
